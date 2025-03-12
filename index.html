@@ -69,13 +69,13 @@ margin-left: 10px;
     padding: 50px;
   }
 	
- /* 图片样式 */
-  .content img {
-width: 100vw; /* 图片宽度充满视口宽度 */
-  align-items: center; /* 垂直居中 */
-    height: auto; /* 保持图片比例 */
-    border-radius: 10px; /* 可选：为图片添加圆角 */
-  }
+/* 图片样式，让图片充满页面 */
+.content img {
+  width: 100vw; /* 宽度充满视口 */
+  height: 100vh; /* 高度充满视口 */
+  object-fit: cover; /* 图片按比例裁剪并填满视口 */
+  display: block; /* 移除图片默认的 inline 间距 */
+}
 
   /* 底部版权栏样式 */
   .footer {
