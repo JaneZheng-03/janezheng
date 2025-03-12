@@ -4,24 +4,25 @@
 <meta charset="utf-8"> 
 <title>Grafic Design</title> 
 <style>
-  body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
+    width: 100%; /* 确保宽度一致 */
   }
+	
   /* 顶部导航栏样式 */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
- gap: 40px; /* LOGO 和菜单之间的间距 */
-    align-items: center;
+ .navbar {
+  display: flex;
+  gap: 80px; /* LOGO 和菜单之间的间距 */
     background-color: #FFFFFF;
-    padding: 20px 10px;
+    padding: 20px 20px;
     position: fixed; /* 固定在顶部 */
     top: 0;
     left: 0;
     width: 100%; /* 占满宽度 */
     z-index: 1000; /* 确保导航栏位于其他内容上方 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果，可选 */
+flex-wrap: nowrap;
   }
 
    /* 左侧 LOGO 样式（文字形式） */
