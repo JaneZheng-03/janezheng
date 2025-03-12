@@ -22,6 +22,7 @@
     width: 100%; /* 占满宽度 */
     z-index: 1000; /* 确保导航栏位于其他内容上方 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果，可选 */
+flex-wrap: nowrap;
   }
 
    /* 左侧 LOGO 样式（文字形式） */
@@ -39,9 +40,10 @@ margin-left: 10px;
   /* 右侧菜单样式 */
   .navbar .menu {
     display: flex;
-    gap: 40px;
-margin-left: 50%; /* 菜单从页面中间开始 */
-    transform: translateX(-50%); /* 将菜单向左移动一半，精确居中 */
+    gap: 30px;
+margin-left: auto; /* 让菜单自动推到右侧 */
+  transform: none; /* 去掉水平平移 */
+}
   }
 
 .navbar .menu a {
