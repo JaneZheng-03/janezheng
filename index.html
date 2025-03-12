@@ -18,16 +18,15 @@
     padding: 20px 20px;
   }
 
-  /* 左侧 logo 样式 */
-  .navbar .logo img {
-   text-decoration: none;
-  color: #000; /* 字体颜色 */
-  font-size: 20px; /* 字体大小 */
-  font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
-  font-weight: Bold; /* 字体加粗 */
-  text-transform: uppercase; /* 字母全部大写 */
-  letter-spacing: 1px; /* 字母间距 */
-  }
+   /* 左侧 LOGO 样式（文字形式） */
+  .navbar .logo {
+    text-decoration: none;
+    color: #000; /* 字体颜色 */
+    font-size: 20px; /* 字体大小 */
+    font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
+    font-weight: bold; /* 字体加粗 */
+    text-transform: uppercase; /* 字母全部大写 */
+    letter-spacing: 1px; /* 字母间距 */
   }
 
   /* 右侧菜单样式 */
@@ -82,8 +81,8 @@
  
 <!-- 顶部导航栏 -->
 <div class="navbar">
- <a href="#Jane">Jane's Channel</a>
-  </div>
+  <!-- LOGO 文字 -->
+  <a href="#Jane" class="logo">Jane's Channel</a>
   
   <!-- 菜单 -->
   <div class="menu">
