@@ -16,6 +16,12 @@
     align-items: center;
     background-color: #FFFFFF;
     padding: 20px 20px;
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 占满宽度 */
+    z-index: 1000; /* 确保导航栏位于其他内容上方 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果，可选 */
   }
 
    /* 左侧 LOGO 样式（文字形式） */
@@ -62,17 +68,20 @@
     border-radius: 10px; /* 可选：为图片添加圆角 */
   }
 
+  /* 底部版权栏样式 */
   .footer {
     background-color: #FFFFFF;
     text-align: center;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* 固定在底部 */
+    bottom: 0; /* 距离底部为 0 */
+    left: 0;
+    width: 100%; /* 占满宽度 */
     font-size: 12px; /* 设置字体大小 */
-    font-family: "Iowan Old Style", sans-serif; /* 设置字体类型 */
+    font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
     font-weight: regular; /* 设置字体加粗 */
     color: #000000; /* 设置字体颜色 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果，可选 */
   }
 	
 </style>
