@@ -80,29 +80,26 @@ margin-left: 10px;
     font-weight: bold;
   }
 
+   /* 分类菜单样式 */
+    .categories {
+      display: block; /* 确保是块级元素 */
+      text-align: center; /* 居中对齐 */
+      margin: 20px 0; /* 添加上下间距 */
+	font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
+    }
 
-/* 小标题样式 */
-.categories {
-  display: block; /* 确保是块级元素 */
-  text-align: center !important; /* 居中对齐 */
-  margin: 20px 0;
-  color: gray;
-  font-size: 14px;
-  font-family: Arial, sans-serif;
-}
+    .categories a {
+      display: inline; /* 确保链接是行内元素 */
+      text-decoration: none; /* 去掉下划线 */
+      color: gray; /* 链接颜色 */
+      margin: 0 10px; /* 添加水平间距 */
+      font-size: 16px; /* 设置字体大小 */
+    }
 
-.categories a {
-  text-decoration: none;
-  color: gray;
-  margin: 0 10px;
-  font-size: 14px;
-  display: inline; /* 保持行内元素 */
-}
-
-.categories a:hover {
-  text-decoration: underline;
-}
-
+    .categories a:hover {
+      color: black; /* 鼠标悬停时改变颜色 */
+      text-decoration: underline; /* 添加下划线 */
+    }
   /* 作品图网格布局 */
   .projects {
     display: grid;
