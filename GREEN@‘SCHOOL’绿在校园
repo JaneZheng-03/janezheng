@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>Jane's Channel</title> 
+<style>
+/* 全局设置，确保宽度计算正确 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100%; /* 确保宽度一致 */
+  }
+	
+  /* 顶部导航栏样式 */
+ .navbar {
+  display: flex;
+  justify-content: space-between; /* LOGO 和菜单两端对齐 */
+  align-items: center; /* 垂直居中 */
+  background-color: #FFFFFF;
+  padding: 20px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+   /* 左侧 LOGO 样式（文字形式） */
+  .navbar .logo {
+margin-left: 10px;
+    text-decoration: none;
+    color: #000; /* 字体颜色 */
+    font-size: 20px; /* 字体大小 */
+    font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
+    font-weight: bold; /* 字体加粗 */
+    text-transform: uppercase; /* 字母全部大写 */
+    letter-spacing: 1px; /* 字母间距 */
+  }
+
+  /* 菜单样式 */
+  .navbar .menu {
+    display: flex;
+    gap: 20px; /* 菜单项之间的间距 */
+  }
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #000 !important; /* 强制字体颜色为黑色 */
+  font-size: 14px !important; /* 强制字体大小 */
+  font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
+  font-weight: regular; /* 字体加粗 */
+  text-transform: capitalize; /* 首字母大写 */
+  letter-spacing: 1px; /* 字母间距 */
+  }
+
+  .navbar .menu a:hover {
+    color: #fff;
+  }
+
+  /* 内容样式 */
+  .content {
+    text-align: center;
+    padding: 50px;
+  }
+    /* 全局样式 */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* 标题部分 */
+    .header {
+      margin: 40px 20px; /* 增加左右间距 */
+    }
+
+    .header h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: left; /* 靠左对齐 */
+    }
+
+    .header .details {
+      font-size: 16px;
+      color: #666;
+      margin-top: 10px;
+      text-align: left; /* 靠左对齐 */
+    }
+
+    /* 作品视频部分 */
+    .video-section {
+      margin: 40px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    /* 项目介绍部分 */
+    .project-intro {
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 0 20px;
+      text-align: left; /* 靠左对齐 */
+    }
+
+    .project-intro h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .project-intro p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* 小组成员和导师部分 */
+    .team-section {
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 0 20px;
+      text-align: left; /* 靠左对齐 */
+    }
+
+    .team-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .team-list {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* 作品图片和文字说明 */
+    .work-details {
+      margin: 40px auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .work-item {
+      margin-bottom: 40px;
+      text-align: left; /* 靠左对齐 */
+    }
+
+    .work-item img {
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .work-item h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .work-item p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 标题部分 -->
+  <div class="header">
+    <h1>作品标题：绿色校园设计</h1>
+    <div class="details">设计种类：服务设计 | 日期：2023年5月15日</div>
+  </div>
+
+  <!-- 作品视频部分 -->
+  <div class="video-section">
+    <video controls>
+      <source src="your-video.mp4" type="video/mp4">
+      您的浏览器不支持视频播放。
+    </video>
+  </div>
+
+  <!-- 项目介绍部分 -->
+  <div class="project-intro">
+    <h2>项目介绍</h2>
+    <p>
+      这个项目旨在通过现代设计方法，解决校园中浪费资源的问题。我们结合绿色设计理念，创建了一个高效且可持续的校园系统。本项目围绕学生、老师以及校园管理者的需求展开。
+    </p>
+  </div>
+
+  <!-- 小组成员和导师部分 -->
+  <div class="team-section">
+    <h2>小组成员</h2>
+    <div class="team-list">张三、李四、王五、赵六</div>
+    <h2>导师</h2>
+    <div class="team-list">导师姓名：陈老师</div>
+  </div>
+
+  <!-- 作品具体图片和文字说明 -->
+  <div class="work-details">
+    <div class="work-item">
+      <img src="https://via.placeholder.com/800x500" alt="设计阶段 1">
+      <h3>设计阶段 1：概念草图</h3>
+      <p>通过与用户的深入调研，我们绘制了初步的概念草图，展示了绿色校园的整体框架。</p>
+    </div>
+    <div class="work-item">
+      <img src="https://via.placeholder.com/800x500" alt="设计阶段 2">
+      <h3>设计阶段 2：原型设计</h3>
+      <p>基于草图，我们制作了一个低保真模型，用于测试用户需求是否得到满足。</p>
+    </div>
+    <div class="work-item">
+      <img src="https://via.placeholder.com/800x500" alt="设计阶段 3">
+      <h3>设计阶段 3：最终成果</h3>
+      <p>这是最终的设计成果，包括详细的图纸和实际应用方案。</p>
+    </div>
+<!-- 底部版权 -->
+<div class="footer">
+  版权 © Jane.2025
+</div>
+
+</body>
+</html>
