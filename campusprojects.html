@@ -68,37 +68,31 @@ margin-left: 10px;
     text-align: center;
     padding: 50px;
   }
-	/* 页面标题样式 */
-  .title {
-    margin-top: 100px; /* 避免被导航栏遮挡 */
-    text-align: center;
-  font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
-  text-transform: capitalize; /* 首字母大写 */
-  letter-spacing: 1px; /* 字母间距 */
-  }
-    font-size: 32px;
-    font-weight: bold;
-  }
+/* 页面标题 */
+    .title {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
+    }
 
-   /* 分类菜单样式 */
+    /* 分类菜单 */
     .categories {
-      display: block; /* 确保是块级元素 */
-      text-align: center; /* 居中对齐 */
-      margin: 20px 0; /* 添加上下间距 */
-	font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
+      text-align: center;
+      margin: 20px 0;
+ font-family: "Iowan Old Style", sans-serif; /* 字体类型 */
     }
 
     .categories a {
-      display: inline; /* 确保链接是行内元素 */
-      text-decoration: none; /* 去掉下划线 */
-      color: gray; /* 链接颜色 */
-      margin: 0 10px; /* 添加水平间距 */
-      font-size: 16px; /* 设置字体大小 */
+      text-decoration: none;
+      color: gray;
+      margin: 0 10px;
+      font-size: 16px;
     }
 
     .categories a:hover {
-      color: black; /* 鼠标悬停时改变颜色 */
-      text-decoration: underline; /* 添加下划线 */
+      color: black;
     }
   /* 作品图网格布局 */
   .projects {
@@ -121,7 +115,8 @@ margin-left: 10px;
     width: 100%;
     height: auto;
     display: block;
-  }
+ transform: scale(1.05); /* 鼠标悬停时图片轻微放大 */
+    }
 
   .project .overlay {
     position: absolute;
@@ -142,7 +137,7 @@ margin-left: 10px;
   .project:hover .overlay {
     opacity: 1; /* 鼠标悬停时显示 */
   }
-
+	
   .project-title {
     font-size: 16px;
     font-weight: bold;
@@ -213,24 +208,6 @@ margin-left: 10px;
     <div class="overlay">
       <div class="project-title">GREEN@‘SCHOOL’绿在校园</div>
       <div class="project-type">Service design 服务设计</div>
-   <a href="GREEN@‘SCHOOL’绿在校园.html">GREEN@‘SCHOOL’绿在校园</a>
-  </div>
-</div>
-    </div>
-  </div>
-  <div class="project">
-    <img src="https://via.placeholder.com/400x300" alt="Project 2">
-    <div class="overlay">
-      <div class="project-title">Project 2</div>
-      <div class="project-type">Poster Design</div>
-    </div>
-  </div>
-  <div class="project">
-    <img src="https://via.placeholder.com/400x300" alt="Project 3">
-    <div class="overlay">
-      <div class="project-title">Project 3</div>
-      <div class="project-type">Packaging Design</div>
-    </div>
   </div>
   <!-- 添加更多项目 -->
 </div>
