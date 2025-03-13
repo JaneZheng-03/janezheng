@@ -80,25 +80,28 @@ margin-left: 10px;
     font-weight: bold;
   }
 
-  /* 小标题样式 */
-  .categories {
-    text-align: center;
-    margin: 20px 0;
-    color: gray;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-  }
 
-  .categories a {
-    text-decoration: none;
-    color: gray;
-    margin: 0 10px;
-    font-size: 14px;
-  }
+/* 小标题样式 */
+.categories {
+  display: block; /* 确保是块级元素 */
+  text-align: center; /* 居中对齐 */
+  margin: 20px 0;
+  color: gray;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
 
-  .categories a:hover {
-    text-decoration: underline;
-  }
+.categories a {
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  font-size: 14px;
+  display: inline; /* 保持行内元素 */
+}
+
+.categories a:hover {
+  text-decoration: underline;
+}
 
   /* 作品图网格布局 */
   .projects {
